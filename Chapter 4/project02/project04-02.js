@@ -42,11 +42,6 @@ function quoteGenerator() {
    // Retrieve a randomly-selected quote
    let quote = quotes[randomQuote];
 
-   if (quote == undefined) {
-     console.log("Quote is undefined!");
-   }
-   
-   
    // Display the random quote
    document.getElementsByTagName("blockquote")[0].innerHTML = quote;
 }
