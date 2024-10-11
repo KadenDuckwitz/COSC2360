@@ -1,0 +1,56 @@
+body {
+    background-color: #e8e2a7;
+}
+
+#title {
+    background-color: #c9c28b;
+
+    text-align: center;
+    font-size: 30px;
+    color: #821501;
+
+    border-color: #c48f80;
+    border-width: 4px;
+    border-style:outset;
+
+    padding: 10px;
+}
+
+#pizza-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#toppings {
+    text-align: center;
+}
+
+.topping-label {
+    font-size: 15px;
+}
+
+#crust {
+    text-align: center;
+}
+
+#payment {
+    text-align: center;
+}
+
+#submit {
+    text-align: center;
+}
+
+p {
+    font-size: 15px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
