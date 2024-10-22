@@ -26,40 +26,46 @@ let removeButton = document.getElementById("removeButton");
 let topButton = document.getElementById("topButton");
 let status = document.getElementById("status");
 
+// Function to generate the ordered list based on the contents of the customers array
+function generateCustomerList() {
+    customerList.innerHTML = "";
+    for (let i = 0; i < customers.length; i++) {
+       let customerItem = document.createElement("li");
+       customerItem.textContent = customers[i];
+       customerList.appendChild(customerItem);
+    }
+ }
+
 generateCustomerList();
 
 addButton.addEventListener("click", function() {
-    let customerNameValue = customerName.value;
-
-    customers.push(customerNameValue);
+    customers.push(customerName.value);
     generateCustomerList();
 
-    status.textContent = customerNameValue + " added to the end of the queue";
+    status.textContent = customerName.value + " added to the end of the queue";
 });
 
 searchButton.addEventListener("click", function() {
-    let customerNameValue = customerName.value;
-    let place = customers.indexOf(customerNameValue) + 1;
+    let place = customers.indexOf(customerName.value) + 1;
 
     if (place == 0) {
-        status.textContent = customerNameValue + " is not found in the queue"
+        status.textContent = customerName.value + " is not found in the queue";
     } else {
-        status.textContent = customerNameValue + " found in position " + place + " of the queue";
+        status.textContent = customerName.value + " found in position " + place + " of the queue";
     }
 });
 
 removeButton.addEventListener("click", function () {
-    let customerNameValue = customerName.value;
-    let index = customers.indexOf(customerNameValue);
+    let index = customers.indexOf(customerName.value);
 
     if (index !== -1) {
         customers.splice(index, 1);
 
-        status.textContent = customerNameValue + " removed from the queue";
+        status.textContent = customerName.value + " removed from the queue";
 
         generateCustomerList();
     } else {
-        status.textContent = customerNameValue + " is not found in the queue";
+        status.textContent = customerName.value + " is not found in the queue";
     }
 });
 
@@ -69,13 +75,3 @@ topButton.addEventListener("click", function() {
 
     generateCustomerList();
 });
-
-// Function to generate the ordered list based on the contents of the customers array
-function generateCustomerList() {
-   customerList.innerHTML = "";
-   for (let i = 0; i < customers.length; i++) {
-      let customerItem = document.createElement("li");  
-      customerItem.textContent = customers[i];     
-      customerList.appendChild(customerItem);
-   }
-}

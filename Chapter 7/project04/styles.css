@@ -132,9 +132,7 @@ p#status {
 }
 
 ol {
-   /*
    display: list-item;
-   */
    list-style-type:decimal;
    padding-left: 60px;
    line-height: 2;
