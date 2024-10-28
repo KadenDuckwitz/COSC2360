@@ -22,11 +22,11 @@ let miles = document.getElementById("miles");
 let comments = document.getElementById("comments");
 
 
-riderName.textContent = localStorage.getItem(riderName.id);
-ageGroup.textContent = localStorage.getItem(ageGroup.id);
-bikeOption.textContent = localStorage.getItem(bikeOption.id);
-routeOption.textContent = localStorage.getItem(routeOption.id);
-accOption.textContent = localStorage.getItem(accOption.id);
-region.textContent = localStorage.getItem(region.id);
-miles.textContent = localStorage.getItem(miles.id);
-comments.textContent = localStorage.getItem(comments.id);
+riderName.textContent = sessionStorage.getItem(riderName.id);
+ageGroup.textContent = sessionStorage.getItem(ageGroup.id);
+bikeOption.textContent = sessionStorage.getItem(bikeOption.id);
+routeOption.textContent = sessionStorage.getItem(routeOption.id);
+accOption.textContent = sessionStorage.getItem(accOption.id);
+region.textContent = sessionStorage.getItem(region.id);
+miles.textContent = sessionStorage.getItem(miles.id);
+comments.textContent = sessionStorage.getItem(comments.id);

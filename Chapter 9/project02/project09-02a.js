@@ -24,14 +24,14 @@ let comments = document.getElementById("comments");
 document.getElementById("submitButton").onclick = showData;
 
 function showData() {
-    localStorage.setItem(riderName.id, riderName.value);
-    localStorage.setItem(ageGroup.id, ageGroup.value);
-    localStorage.setItem(bikeOption.id, bikeOption.value);
-    localStorage.setItem(routeOption.id, routeOption.value);
-    localStorage.setItem(accOption.id, accOption.value);
-    localStorage.setItem(region.id, region.value);
-    localStorage.setItem(miles.id, miles.value);
-    localStorage.setItem(comments.id, comments.value);
+    sessionStorage.setItem(riderName.id, riderName.value);
+    sessionStorage.setItem(ageGroup.id, ageGroup.value);
+    sessionStorage.setItem(bikeOption.id, bikeOption.value);
+    sessionStorage.setItem(routeOption.id, routeOption.value);
+    sessionStorage.setItem(accOption.id, accOption.value);
+    sessionStorage.setItem(region.id, region.value);
+    sessionStorage.setItem(miles.id, miles.value);
+    sessionStorage.setItem(comments.id, comments.value);
 
     location.href = "project09-02b.html";
 }
