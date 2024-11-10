@@ -5,8 +5,8 @@
 
     Crossword Puzzle Functions
     
-    Author: 
-    Date:   
+    Author: Kaden Duckwitz
+    Date: 10/9/24
 
     Filename: cross.js
 
