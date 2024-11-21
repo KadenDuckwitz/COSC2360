@@ -9,5 +9,3 @@
 
       Filename: project12-03.js
 */
-
-
